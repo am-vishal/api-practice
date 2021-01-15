@@ -1,0 +1,39 @@
+{
+    "users": [
+      {
+        "userId": 1,
+        "firstName": "Vishal",
+        "lastName": "Kumar",
+        "phoneNumber": "8969888998",
+        "emailAddress": "vkcky6@gmail.com"
+      },
+      {
+        "userId": 2,
+        "firstName": "Ajay",
+        "lastName": "Nayak",
+        "phoneNumber": "8838983338",
+        "emailAddress": "iamajaynayak@yahoo.com"
+      },
+      {
+        "userId": 3,
+        "firstName": "Ashish",
+        "lastName": "Kumar",
+        "phoneNumber": "8007003829",
+        "emailAddress": "kucmarashish@gmail.com"
+      },
+      {
+        "userId": 4,
+        "firstName": "Taheer",
+        "lastName": "Basha",
+        "phoneNumber": "7895866875",
+        "emailAddress": "taheer143@gmail.com"
+      },
+      {
+        "userId": 5,
+        "firstName": "Udai",
+        "lastName": "Kiran",
+        "phoneNumber": "8956254875",
+        "emailAddress": "udaikiranfsd@gmail.com"
+      }
+    ]
+  }
