@@ -47,12 +47,39 @@ async function getQuote() {
     const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand");
     const data = await resp.json();
 
-    data.filter(function (item) {
-        console.log(item.content.rendered[1])
-        return item.content.rendered = [0]
+    data.filter(function (item, index) {
+        // console.log(item.content.rendered, index)
+        // console.log(item.id,index)
+        let filterkeys = Object.keys(index)
+        item.filter(item => {
+
+        })
+        filterkeys.every(jey => {
+
+        })
+
+        if (!filter[key].length) return true;
+        return index[key].find(filter => getValue(filter) === getValue(item[key]));
+        content.filter()
+        console.log("done ", item.content.rendered)
+
+    }
     })
 }
 getQuote()
+
+function filterArray(array, filters) {
+    const filterKeys = Object.keys(filters);
+    return array.filter(item => {
+        // validates all filter criteria
+        return filterKeys.every(key => {
+            // ignores non-function predicates
+            if (typeof filters[key] !== 'function') return true;
+            return filters[key](item[key]);
+        });
+    });
+}
+
 // ************************************************************************//
 
 
