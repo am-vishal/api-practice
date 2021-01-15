@@ -1,11 +1,11 @@
-// Step:1
+// Example:1
 // ************************************************************************//
 // fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand")
 //     .then(Response => Response.json())
 //     .then(data => console.log(data))
 // ************************************************************************//
 
-// Step:2
+// Example:2
 // ************************************************************************//
 // (async function () {
 //     const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand");
@@ -14,7 +14,7 @@
 // })()
 // ************************************************************************//
 
-// Step:3
+// Example:3
 // ************************************************************************//
 // async function getQuote() {
 //     const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand");
@@ -24,7 +24,7 @@
 // getQuote()
 // ************************************************************************//
 
-// Step:4
+// Example:4
 // ************************************************************************//
 // async function getQuote() {
 //     const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand");
@@ -41,49 +41,33 @@
 // getQuote()
 // ************************************************************************//
 
-// Step:5
+// Example:5
 // ************************************************************************//
-async function getQuote() {
-    const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand");
-    const data = await resp.json();
+// async function getQuote() {
+//     const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand");
+//     const data = await resp.json();
 
-    data.filter(function (item, index) {
-        // console.log(item.content.rendered, index)
-        // console.log(item.id,index)
-        let filterkeys = Object.keys(index)
-        item.filter(item => {
+//     data.filter(function (item, index) {
+//         let filterkeys = Object.keys(item.content.rendered)
+//         console.log(filterkeys)
+//     })
+// }
+// getQuote()
+// ************************************************************************//
 
-        })
-        filterkeys.every(jey => {
-
-        })
-
-        if (!filter[key].length) return true;
-        return index[key].find(filter => getValue(filter) === getValue(item[key]));
-        content.filter()
-        console.log("done ", item.content.rendered)
-
-    }
-    })
-}
-getQuote()
-
-function filterArray(array, filters) {
-    const filterKeys = Object.keys(filters);
-    return array.filter(item => {
-        // validates all filter criteria
-        return filterKeys.every(key => {
-            // ignores non-function predicates
-            if (typeof filters[key] !== 'function') return true;
-            return filters[key](item[key]);
-        });
-    });
-}
-
+// Example:6
+// ************************************************************************//
+// async function getData() {
+//     const resp = await fetch("data.json");
+//     const data = await resp.json();
+//     let user0 = data.users[0]
+//     let user1 = data.users[1].firstName
+//     console.log(user0.firstName, user1)
+// } getData()
 // ************************************************************************//
 
 
-// Step:2
+// Example:7
 // ************************************************************************//
 // async function getQuote() {
 //     const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand")
@@ -99,105 +83,80 @@ function filterArray(array, filters) {
 // getQuote()
 // ************************************************************************//
 
-// Step:2
-
-
-
-
-
+// Example:8
+// ************************************************************************//
 // async function getQuote() {
 //     const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand")
 //     const data = await resp.json();
-//     console.log(data)
-// }
-// getQuote()
-//Filter Begin Here
+//     // console.log(data[0].content.rendered)
+//     // const singleData = data[0].content.rendered;
+//     // console.log(singleData)
 
-// var myArray = [];
-// data.split('\n').map(function (data) {
-//     myArray.push(JSON.parse(data));
-// });
-// console.log(myArray);
-// document.getElementById('newQuote').addEventListener('click', newQuote);
-
-// function newQuote() {
-//     console.log(content)
-// }
-
-// data.filter((key, num) => {
-
-//     document.getElementById('newQuote').addEventListener('click', newQuote);
-//     function newQuote() {
-//         let content = key.content.rendered;
-//         document.getElementById("id").innerHTML = content
+//     for (let i = 0; i <= 9; i++) {
+//         // console.log(data[i].content.rendered)
 //     }
 
-// let author = key.author;
-// console.log("author", author)
-// console.log("content", content);
-// document.getElementById("id").innerHTML = JSON.stringify(content);
-// }) ////Filter End Here
+//     data.filter((key, i) => {
+//         // console.log(key.content.rendered, i)
+//         // console.log(data[i].content.rendered, i)
+//     })
 
-// .filter((s) => s.distance >= distance && s.vybe >= vybe[0] && s.vybe <= vybe[1] && filterOut(s))
-// .slice(currentPage * 8 - 8, currentPage * 8)
-// .map((s) => {
-//   return <DoubleCard key={s._id} cardData={s} />;
-// })
+//     data.map((key, i) => {
+//         // console.log(key.content.rendered, i)
+//         // console.log(data[i].content.rendered, i)
+//     })
 
-
-// data.map((ele, num) => {
-
-    // let content = ele.content.rendered;
-    // let author = document.querySelector("#id").innerHTML = JSON.stringify({ content }, null, " ");
-    // document.getElementById('newQuote').addEventListener('click', newQuote);
-
-    // function newQuote() {
-    //     console.log(content)
-    // }
-
-    // let author2 = document.querySelector("#id").innerHTML = content+num;
-    // author.innerHTML = content
-
-    // console.log("content", content);
-    // document.getElementById("id").innerHTML = JSON.stringify(content);
-    // document.getElementById("ide").innerHTML = JSON.stringify(content);
-    // let content = ele.content.rendered;
-    // console.log("content", content, num);
-    // let cleanQuote = content.split(" ");
-    // let wrapped = "[" + cleanQuote.join(",") + "]"
-    // let obj = JSON.parse(wrapped)
-    // console.log(obj)
-// })
+//     data.forEach((key, i) => {
+//         // console.log(key.content.rendered, i)
+//         // console.log(data[i].content.rendered, i)
+//     })
 // }
 // getQuote()
+// ************************************************************************//
 
+// Example:9
+// ************************************************************************//
+// async function getData() {
+//     const resp = await fetch("data.json")
+//     const data = await resp.json();
 
+//     console.log(data.users.length)
+//     const length = data.users.length;
+//     for (let i = 0; i <= length - 1; i++) {
+//         console.log(data.users[i].firstName)
+//     }
+// }
+// getData()
+// ************************************************************************//
 
+// Example:10
+// ************************************************************************//
+// async function getQuote() {
+//     const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand")
+//     const data = await resp.json();
+//     for (let i = 0; i <= 9; i++) {
+//         console.log(data[i].content.rendered)
+//     }
+// }
+// getQuote()
+// ************************************************************************//
 
+// Example:11
+// ************************************************************************//
+async function getQuote() {
+    const resp = await fetch("https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand")
+    const data = await resp.json();
+    // let cleanQuote = key.content.replace(/<\/?p[^>]*>/g, '');
+    let cleanQuote = key.content.rendered.replace(/<\/?p[^>]*>/g, '\n');
+    window.onload = function () {
+        document.getElementById("id").onclick += function getDisplay() {
+            document.getElementById("id").innerHTML = cleanQuote
+        };
+    }
+}
+const newQuote = document.getElementById('id')
+newQuote.addEventListener('click', getDisplay); // new quote on button click
+window.onload = getDisplay; // new quote on page load
 
-
-
-        // let cleanQuote = key.content.replace(/<\/?p[^>]*>/g, '');
-        // let share = 'https://twitter.com/home?status=' + cleanQuote + ' Author: ' + key.title;
-        // quote.innerHTML = key.content;
-        // author.innerHTML = key.title;
-        // console.log(quote, author, cleanQuote, share)
-
-
-
-
-            // data.filter(key => {
-            //     let quote = document.querySelector(".quote");
-            //     let author = document.querySelector(".author");
-            //     let cleanQuote = key.content.replace(/<\/?p[^>]*>/g, ''); // This way we remove <p> tag from quote (api has quotes with p tags)
-
-            //     // let share = 'https://twitter.com/home?status=' + cleanQuote + ' Author: ' + key.title;
-            //     // quote.innerHTML = key.content;
-            //     // author.innerHTML = key.title;
-            // });
-
-
-
-        // const newQuote = document.getElementById('newQuote')
-        // newQuote.addEventListener('click', getQuote); // new quote on button click
-        // window.onload = getQuote; // new quote on page load
+getQuote()
+// ************************************************************************//
