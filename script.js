@@ -157,6 +157,5 @@ async function getQuote() {
 const newQuote = document.getElementById('id')
 newQuote.addEventListener('click', getDisplay); // new quote on button click
 window.onload = getDisplay; // new quote on page load
-
 getQuote()
 // ************************************************************************//
